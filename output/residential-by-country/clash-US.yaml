@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 104.21.55.123
-  port: 2053
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  server: 188.114.97.6
+  port: 8080
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
+      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev.
 proxy-groups:
 - name: PROXIES
   type: select
