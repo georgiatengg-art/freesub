@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
