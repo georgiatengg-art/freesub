@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
   type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  server: 166.88.194.248
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: kkkk-xcd.pages.dev
   network: ws
   ws-opts:
-    path: /db55c40bbc75
+    path: /?ed=2048
     headers:
-      Host: 38.60.168.98
+      Host: kkkk-xcd.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
