@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  server: 193.36.38.17
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: eded-52n.pages.dev
   network: ws
   ws-opts:
-    path: /axch1mttbxz2k55y01
+    path: /
     headers:
-      Host: index.harmonica01.workers.dev
+      Host: eded-52n.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
