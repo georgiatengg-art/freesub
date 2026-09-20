@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - xiaohe
+- name: 🇨🇱 CL 01 - xiaohe
   type: vless
-  server: 193.36.38.17
+  server: 34.176.98.128
   port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  uuid: 4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: eded-52n.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: eded-52n.pages.dev
+  reality-opts:
+    public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇨🇱 CL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇨🇱 CL 01 - xiaohe
 rules:
 - MATCH,PROXIES
