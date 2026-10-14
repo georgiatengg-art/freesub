@@ -13,6 +13,15 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
+  server: 138.124.96.88
+  port: 41826
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sweden.homyak.app
+- name: 🇨🇭 CH 03 - xiaohe
+  type: vless
   server: 185.18.250.245
   port: 443
   uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
@@ -32,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
+  - 🇨🇭 CH 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
+  - 🇨🇭 CH 03 - xiaohe
 rules:
 - MATCH,PROXIES

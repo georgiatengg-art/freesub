@@ -15,18 +15,17 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+    path: /
     headers:
-      Host: cf3.schzyc.cc.cd
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - xiaohe
   type: vless
   server: 94.183.170.135
